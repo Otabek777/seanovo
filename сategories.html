@@ -250,6 +250,23 @@
 
     <main class="main">
         <section class="categories__page">
+            <div class="product__page_nav categories__page_nav">
+                <div class="block">
+                    <a href="#">Все лодочные моторы</a>
+                </div>
+                <div class="block">
+                    <a href="#">Двухтактные моторы SEANOVO</a>
+                </div>
+                <div class="block">
+                    <a href="#">Четырехтактные моторы SEANOVO</a>
+                </div>
+                <div class="block">
+                    <a href="#">Моторы SEANOVO EFI</a>
+                </div>
+                <div class="block">
+                    <a href="#">Электромоторы CONDOR</a>
+                </div>
+            </div>
             <div class="container">
                 <div class="categories__page__box">
                     <div class="categories__page__filter">
@@ -1909,8 +1926,24 @@
                     slidesToShow: 3,
                     centerPadding: '20px',
                 }
+                },
+                {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    centerPadding: '0px',
+                    centerMode: false,
                 }
+                },
             ]
+        });
+        $('.product__page_nav').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            variableWidth: true,
+            arrows: true
         });
     </script>
     <script>

@@ -422,7 +422,7 @@
                 </div>
             </div>
         </section>
-        <section class="product_slider">
+        <section class="product_slider index">
             <h2 class="h2">Выбор покупателей</h2>
             <div class="product_slider__slick">
                 <div class="product_slider__block">
@@ -1140,7 +1140,15 @@
                     slidesToShow: 3,
                     centerPadding: '20px',
                 }
+                },
+                {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    centerPadding: '0px',
+                    centerMode: false,
                 }
+                },
             ]
         });
         $('.reviews__slider').slick({
@@ -1170,7 +1178,15 @@
                     slidesToShow: 1,
                     centerPadding: '120px',
                 }
+                },
+                {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: '0px',
+                    centerMode: false,
                 }
+                },
             ]
         });
     </script>

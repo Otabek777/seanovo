@@ -1643,7 +1643,15 @@
                     slidesToShow: 3,
                     centerPadding: '20px',
                 }
+                },
+                {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    centerPadding: '0px',
+                    centerMode: false,
                 }
+                },
             ]
         });
         $('.product__page_nav').slick({
@@ -1675,6 +1683,15 @@
             centerMode: true,
             centerPadding: '210px',
             slidesToShow: 1,
+            responsive: [
+                {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: '50px',
+                }
+                },
+            ]
         });
     </script>
 </body>
