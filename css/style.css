@@ -4464,7 +4464,10 @@ ul, ol {
     line-height: 140%;
     margin-right: 8px; }
   .product__page {
+    padding-top: 31px;
     display: block; }
+  .product__page .product__page_nav {
+    padding-left: 0; }
   .product__page__img_block {
     height: 360px; }
   .product__page__img_block .img {
@@ -4692,6 +4695,7 @@ ul, ol {
     width: 100%;
     margin-bottom: 16px; }
   .about_us__page {
+    padding-top: 24px;
     padding-bottom: 80px; }
   .become__page {
     display: block;
@@ -4829,6 +4833,36 @@ ul, ol {
     margin-bottom: 80px; }
   .contacts__page .container {
     padding: 0; }
+  .map__page {
+    display: block;
+    padding-bottom: 80px; }
+    .map__page .container {
+      padding: 0; }
+  .map__page__block .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto;
+    padding: 0 16px; }
+    .map__page__block .top .btn {
+      padding: 16px 0 8px; }
+  .map__page__filter {
+    position: fixed;
+    bottom: -100%; }
+  .map__page__box iframe {
+    height: 400px; }
+  .map__page__block {
+    height: 619px; }
+  .map__page__block .block {
+    height: 167px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px; }
+  .map__page__box {
+    margin-bottom: 80px; }
+  .map__page__block .title {
+    padding-left: 24px; }
   .footer__logo {
     position: relative;
     top: auto;
