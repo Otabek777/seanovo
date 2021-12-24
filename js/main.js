@@ -9,6 +9,7 @@ $(window).scroll(function(){
         $('.header_mobile_menu').removeClass('fixed');
     }
 });
+
 document.querySelector('.header__catalog').addEventListener('click', function () {
     this.classList.toggle('active');
     document.querySelector('.catalog_menu').classList.toggle('active');
@@ -26,6 +27,16 @@ for(let i = 0; i < catalogLink.length; i++) {
         for(let k = 0; k < catalogLink.length; k++) {
             catalogLink[k].classList.remove('opacity');
         };
+    });
+};
+if(document.querySelector('.product__page .h2 .icon')) {
+    document.querySelector('body').addEventListener('click', function() {
+        document.querySelector('.product__page .h2 .icon').classList.remove('active');
+    });
+    document.querySelector('.product__page .h2 .icon').addEventListener('click', function() {
+        setTimeout(function() {
+            document.querySelector('.product__page .h2 .icon').classList.add('active');
+        }, 01)
     });
 };
 document.querySelector('.header_burgir').addEventListener('click', function() {
