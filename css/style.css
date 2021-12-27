@@ -3624,6 +3624,8 @@ ul, ol {
   display: none; }
 
 @media screen and (max-width: 1024px) {
+  .map__page__block .block {
+    padding-left: 24px; }
   .banner__slider .slick-dots {
     bottom: 36px; }
     .banner__slider .slick-dots li {
