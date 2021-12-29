@@ -529,6 +529,12 @@ ul, ol {
 .banner__slider .slick-arrow:hover {
   background-color: #fff; }
 
+.banner_tab {
+  display: none; }
+
+.banner_mobile {
+  display: none; }
+
 .banner__block img {
   width: 100%; }
 
@@ -3624,6 +3630,12 @@ ul, ol {
   display: none; }
 
 @media screen and (max-width: 1024px) {
+  .banner_desktop {
+    display: none; }
+  .banner_tab {
+    display: block; }
+  .banner__btn {
+    bottom: 100px; }
   .map__page__block .block {
     padding-left: 24px; }
   .banner__slider .slick-dots {
@@ -4322,6 +4334,13 @@ ul, ol {
   display: none; }
 
 @media screen and (max-width: 767px) {
+  .banner_tab {
+    display: none; }
+  .banner_mobile {
+    display: block; }
+  .banner__block img {
+    width: 100%;
+    height: auto; }
   .categories__page__filter .catalog__aside .top {
     width: 100%; }
   .map__page_filter_btn {
@@ -4544,13 +4563,13 @@ ul, ol {
     display: block;
     margin-bottom: 56px; }
   .banner__block {
-    height: 227px; }
+    height: 260px; }
   .header__top {
     height: 48px;
     padding-top: 12px; }
   .banner__btn {
-    bottom: 50px;
-    padding-left: 15px; }
+    bottom: 60px;
+    padding-left: 12px; }
     .banner__btn .btn {
       width: 120px;
       height: 28px;
@@ -5424,3 +5443,7 @@ ul, ol {
       width: 18px;
       height: 18px;
       margin: 0 5px; } }
+
+@media screen and (max-width: 330px) {
+  .banner__block {
+    height: 240px; } }
