@@ -15,7 +15,6 @@ $(window).scroll(function(){
             $('.btn_cart').removeClass('fixed');
         }
     }
-    
 });
 
 document.querySelector('.header__catalog').addEventListener('click', function () {
