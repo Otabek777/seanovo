@@ -4544,8 +4544,9 @@ ul, ol {
   width: 106px;
 }
 .product_page2__right .wrap {
-  height: 66px;
+  min-height: 66px;
   position: relative;
+  border-left: 1px solid #EEEEEE;
 }
 .product_page2__right .wrap .replacement {
   padding: 0 4px;
@@ -4560,13 +4561,10 @@ ul, ol {
 }
 .product_page2__right .item {
   width: 100%;
-  height: 66px;
+  min-height: 66px;
   border: 1px solid #EEEEEE;
   border-left: 0;
   border-top: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .product_page2__right .item .num {
   width: 36px;
@@ -4730,6 +4728,9 @@ ul, ol {
   width: 100%;
   height: 137px !important;
   display: none;
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
 }
 .product_page2__right .box_item.active + .bottom {
   width: calc(100% + 1px);
