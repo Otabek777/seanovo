@@ -6221,9 +6221,7 @@ ul, ol {
 
   .product_page2__right .bottom {
     height: 282px !important;
-    position: absolute !important;
-    top: 48px;
-    left: 0;
+    margin-top: -67px;
     width: 100% !important;
     overflow: hidden;
     border: 0 !important;
