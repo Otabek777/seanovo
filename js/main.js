@@ -17,6 +17,22 @@ $(window).scroll(function(){
     }
 });
 
+if(document.querySelector(".product2_tab")) {
+    function tabCheck(btn, content) {
+        $("#tab-btn-"+btn).click(function() {
+            $(".tab-btn").removeClass('active');
+            $(".product2_tab .div").removeClass('active');
+            $(this).addClass('active');
+            $("#content-"+content).addClass('active');
+        });
+    };
+    tabCheck("1", "1");
+    tabCheck("2", "2");
+    tabCheck("3", "3");
+    tabCheck("4", "4");
+    tabCheck("5", "5");
+};
+
 document.querySelector('.header__catalog').addEventListener('click', function () {
     this.classList.toggle('active');
     document.querySelector('.catalog_menu').classList.toggle('active');
