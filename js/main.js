@@ -31,6 +31,23 @@ if(document.querySelector(".product2_tab")) {
     tabCheck("3", "3");
     tabCheck("4", "4");
     tabCheck("5", "5");
+
+    $("#text_wrap_open").click(function() {
+        $(this).css("display", "none");
+        $(".text_wrap").addClass('open');
+    });
+    $("#specifications_box_open").click(function() {
+        $(this).css("display", "none");
+        $(".specifications_box").addClass('open');
+    });
+    $("#equipment_open").click(function() {
+        $(this).css("display", "none");
+        $(".equipment").addClass('open');
+    });
+    $("#product2_reviews__box_open").click(function() {
+        $(this).css("display", "none");
+        $(".product2_reviews__box").addClass('open');
+    });
 };
 
 document.querySelector('.header__catalog').addEventListener('click', function () {
