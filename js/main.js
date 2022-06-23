@@ -37,16 +37,13 @@ if(document.querySelector(".product2_tab")) {
         $(".text_wrap").addClass('open');
     });
     $("#specifications_box_open").click(function() {
-        $(this).css("display", "none");
-        $(".specifications_box").addClass('open');
+        $("#tab-btn-2").click()
     });
     $("#equipment_open").click(function() {
-        $(this).css("display", "none");
-        $(".equipment").addClass('open');
+        $("#tab-btn-3").click()
     });
     $("#product2_reviews__box_open").click(function() {
-        $(this).css("display", "none");
-        $(".product2_reviews__box").addClass('open');
+        $("#tab-btn-5").click()
     });
 };
 
