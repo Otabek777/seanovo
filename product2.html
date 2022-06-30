@@ -851,7 +851,7 @@
                                 <br>
                                 <button class="delete">Узнать о поступлении</button>
                             </div>
-                            <button class="add_cart">Добавить в корзину</button>
+                            <button class="add_cart" id="open_modal_product">Добавить в корзину</button>
                             <button class="btn_cheaper">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#FFAD38"/>
@@ -3923,6 +3923,14 @@
                 },
             ]
         });
+        if(document.querySelector("#open_modal_product")) {
+            $("#open_modal_product").click(function() {
+                $(".modal_product").addClass('active');
+            });
+            $(".modal_product__close").click(function() {
+                $(".modal_product").removeClass('active');
+            });
+        };
 
         // Open Info
         function info() {
